@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-17"
+lastupdated: "2019-05-21"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -82,7 +82,26 @@ You can check your usage by going to **Manage > Billing and usage** and selectin
 {: #accounts-service-removal}
 {: faq}
 
-If you want to stop or delete a service, you can do so from the resource list. Learn more in [Navigating the {{site.data.keyword.Bluemix_notm}} console](/docs/overview?topic=overview-ui).
+If you want to delete a service, complete the following steps:
+1. Log in to the IBM Cloud Console at https://cloud.ibm.com/
+1. Click View Resources within the Resources Summary section of the Dashboard.
+1. Expand the Resource List sections and locate the service instance that you want to remove. 
+1. Click the three dots on the far right side of the row that lists the service instance that you want to remove.
+1. Select Delete from the menu that displays. 
+1. Refresh the window to ensure that the service instance is no longer listed.
+Learn more in [Navigating the {{site.data.keyword.Bluemix_notm}} console](/docs/overview?topic=overview-ui).
+
+## How do I stop a service in my account?
+{: #accounts-service-stop}
+{: faq}
+
+If you want to stop a service, complete the following steps:
+1. Log in to the IBM Cloud Console at https://cloud.ibm.com/
+1. Click View Resources within the Resources Summary section of the Dashboard.
+1. Expand the Resource List sections and locate the service instance that you want to remove. 
+1. Click the three dots on the far right side of the row that lists the service instance that you want to remove.
+1. Select Stop from the menu that displays. 
+Learn more in [Navigating the {{site.data.keyword.Bluemix_notm}} console](/docs/overview?topic=overview-ui).
 
 ## How many resource groups, orgs, or spaces can I create?
 {: #resourcelimit}
@@ -122,8 +141,6 @@ You can change which email notifications you receive for planned events, unplann
 1. Go to [Notifications](https://cloud.ibm.com/user/notifications) in your profile settings.
 1. Select whether to receive email notifications for each type of event.
 
-For classic infrastructure services, account owners can also subscribe users to notifications from those services by going to **Manage > Account > Notifications**.
-
 For more information, see [Setting email preferences](/docs/account?topic=account-email-prefs).
 
 ## How do I reset my password?
@@ -133,11 +150,10 @@ For more information, see [Setting email preferences](/docs/account?topic=accoun
 To reset your account password, go to the Avatar icon ![Avatar icon](../icons/i-avatar-icon.svg) **> Profile and settings**. Then, click **Change or reset** from the Account user information tile.
 
 To reset your VPN password, complete the following steps:
-
-  1. Go to **Manage > Access (IAM)**, and select **Users**.
-  2. Select the user.
-  3. From the VPN subnets section, click the Edit icon ![Edit icon](../icons/icon_write.svg) to enter a new VPN password.
-  5. Click **Apply**.
+1. Go to **Manage > Access (IAM)**, and select **Users**.
+1. Select the user.
+1. From the VPN subnets section, click the Edit icon ![Edit icon](../icons/icon_write.svg) to enter a new VPN password.
+1. Click **Apply**.
 
 ## How do I cancel my account?
 {: #cancelaccount}
@@ -252,7 +268,26 @@ If you have more than one account, you can click your account name to select ano
 
 You can transfer ownership of individual resources within your account to someone else by using the `ibmcloud catalog` command. To learn more, see [Transferring ownership of a private resource](/docs/account?topic=account-include#owners).
 
-Transferring ownership of your entire account requires additional help from support. To get help, [contact support](/docs/get-support?topic=get-support-getting-customer-support).
+Transferring the ownership of your entire account requires additional information and assistance from support. 
+
+If you are the current master owner of the account and can log in to the IBM Cloud Console, complete the following steps:
+1. Click **Manage** and select **Account**.
+1. Click **Company profile** on the left side of the window. 
+1. Click **Request Profile Update**.
+1. Update the account profile with the new owner information.
+1. Click **Submit Update Request**.
+The changes will be reviewed by IBM Cloud before the changes go into effect. 
+
+If the current master owner is unable to log in, has been replaced, or has left your organization and cannot make the change, you must make an official request through a support case. This request must be made in a document that is attached to the case. This document must:
+- Include your official company letterhead
+- State that the individual is no longer associated with your company
+- Explain that you want the master owner changed to reflect the new information
+- Provide the first and last name of the new master owner
+- Provide the email address and phone number of the new master owner
+
+If you have the article of incorporation, provide that information as well. Before we can make the change, the letter must be signed by an executive at your company.
+
+To submit the request, [contact support](/docs/get-support?topic=get-support-getting-customer-support). 
 
 ## Does {{site.data.keyword.Bluemix_notm}} support batch registration of users?
 {: #batch-registration}
